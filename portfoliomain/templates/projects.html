@@ -1,0 +1,296 @@
+<html>
+ <head>
+  <title>
+   Projects
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .sidebar {
+            width: 20%;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .sidebar img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+        .sidebar h1 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        .sidebar p {
+            font-size: 14px;
+            color: #ffcc00;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+        .sidebar ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .sidebar .instagram {
+            margin-top: 20px;
+        }
+        .sidebar .instagram img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .sidebar .social-icons {
+            margin-top: 20px;
+        }
+        .sidebar .social-icons a {
+            color: #fff;
+            margin-right: 10px;
+            font-size: 20px;
+        }
+        .sidebar .copyright {
+            margin-top: 20px;
+            font-size: 12px;
+        }
+        .main-content {
+            width: 60%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .main-content h1 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .projects {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .project {
+            background-color: #fff;
+            width: 48%;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .project img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .project-content {
+            padding: 20px;
+        }
+        .project-content h3 {
+            font-size: 18px;
+            margin: 0 0 10px;
+        }
+        .project-content p {
+            font-size: 14px;
+            margin: 0 0 10px;
+        }
+        .project-content a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ffcc00;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .footer a {
+            color: #333;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .twitter-feed {
+            width: 20%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .twitter-feed .tweet {
+            margin-bottom: 20px;
+        }
+        .twitter-feed .tweet img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .twitter-feed .tweet p {
+            font-size: 14px;
+            margin: 0;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <div class="sidebar">
+    <img alt="Profile picture of Drew Rawitz" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-YWNHwBpw9kmeggx41btK1lVU.png?st=2024-09-14T07%3A06%3A33Z&amp;se=2024-09-14T09%3A06%3A33Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-13T23%3A07%3A01Z&amp;ske=2024-09-14T23%3A07%3A01Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=MOXzl1Vkxf1nY%2Bb84aX19jJA0rgjjWTQ6cxx6WTyzBQ%3D" width="100"/>
+    <h1>
+     Drew Rawitz
+    </h1>
+    <p>
+     Web Enthusiast
+    </p>
+    <ul>
+     <li>
+      <a href="{% url "home" %}">
+       Home
+      </a>
+     </li>
+     <li>
+      <a href="{% url "about" %}">
+       About 
+      </a>
+     </li>
+     <li>
+      <a href="{% url "skills" %}">
+       Skills
+      </a>
+     </li>
+     <li>
+      <a href="{% url "contact" %}">
+       Contact
+      </a>
+     </li>
+    </ul>
+    <div class="instagram">
+     <h3>
+      Instagram
+     </h3>
+     <img alt="Instagram image 1" height="200" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-8rus306Kat55c2eOOeZoW2i4.png?st=2024-09-14T07%3A06%3A33Z&amp;se=2024-09-14T09%3A06%3A33Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-13T23%3A05%3A54Z&amp;ske=2024-09-14T23%3A05%3A54Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=tiakoNBccLnmGv1a1cwRpuSYTsiSvi1nxaCs3L3aaPg%3D" width="200"/>
+     <img alt="Instagram image 2" height="200" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-sXYGEa0WnVlFXHVOi7G4FAoE.png?st=2024-09-14T07%3A06%3A34Z&amp;se=2024-09-14T09%3A06%3A34Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-13T23%3A06%3A45Z&amp;ske=2024-09-14T23%3A06%3A45Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=l%2BfyL24EvaYuv9Uw19VT/nHHgYe42GcNkY92EIaNDUo%3D" width="200"/>
+     <img alt="Instagram image 3" height="200" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-3YtgKZPRd5b0UhzKWiuQIrf8.png?st=2024-09-14T07%3A06%3A35Z&amp;se=2024-09-14T09%3A06%3A35Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-14T00%3A39%3A16Z&amp;ske=2024-09-15T00%3A39%3A16Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=lXQkSuas6/sELPol3gA3yfzQD3Q/w6TB6YEec1P/Zcw%3D" width="200"/>
+     <img alt="Instagram image 4" height="200" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-sxL6yddeo7TNLatVnVN0HBZl.png?st=2024-09-14T07%3A06%3A35Z&amp;se=2024-09-14T09%3A06%3A35Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-13T23%3A14%3A05Z&amp;ske=2024-09-14T23%3A14%3A05Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=pVzwIoHUeW/GRtlD20C4Nd5V149KaQM0tzS5nqP91rc%3D" width="200"/>
+    </div>
+    <div class="social-icons">
+     <a href="#">
+      <i class="fab fa-twitter">
+      </i>
+     </a>
+     <a href="#">
+      <i class="fab fa-github">
+      </i>
+     </a>
+     <a href="#">
+      <i class="fab fa-linkedin">
+      </i>
+     </a>
+    </div>
+    <div class="copyright">
+     <p>
+      Copyright © 2017 DrewRawitz.com. All Rights Reserved.
+     </p>
+    </div>
+   </div>
+   <div class="main-content">
+    <h1>
+     Projects
+    </h1>
+    <div class="projects">
+     <div class="project">
+      <img alt="Screenshot of Responsify project" height="150" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-6Sz32kZZUVS7yObJQysUo1Le.png?st=2024-09-14T07%3A06%3A38Z&amp;se=2024-09-14T09%3A06%3A38Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-13T23%3A26%3A39Z&amp;ske=2024-09-14T23%3A26%3A39Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=yUkWDqxJ7n1mpeRGrIlhdzHvwCEjOO33nmfACy5j5T4%3D" width="400"/>
+      <div class="project-content">
+       <h3>
+        Responsify
+       </h3>
+       <p>
+        A simple tool which allows you to test your responsive websites.
+       </p>
+       <a href="#">
+        View On GitHub
+       </a>
+      </div>
+     </div>
+     <div class="project">
+      <img alt="Screenshot of Featured Image Notes project" height="150" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-imaU7xcvP8gPJDFxNc9VCeCW.png?st=2024-09-14T07%3A06%3A36Z&amp;se=2024-09-14T09%3A06%3A36Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-13T23%3A09%3A48Z&amp;ske=2024-09-14T23%3A09%3A48Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=f/21jtBcd2egZFfW2DIb4waMrtf3k8XiISNe%2BzCweKs%3D" width="400"/>
+      <div class="project-content">
+       <h3>
+        Featured Image Notes
+       </h3>
+       <p>
+        A Wordpress Plugin that allows you to add notes to your Featured Image meta box for specific Post Types.
+       </p>
+       <a href="#">
+        View On GitHub
+       </a>
+      </div>
+     </div>
+     <div class="project">
+      <img alt="Screenshot of jQuery Fixed Header project" height="150" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-YXX6GEe8degqRgLhPk3vpMgv.png?st=2024-09-14T07%3A06%3A38Z&amp;se=2024-09-14T09%3A06%3A38Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-13T23%3A24%3A36Z&amp;ske=2024-09-14T23%3A24%3A36Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=XIKMI5tzue9rv5HkJyw9VRQs3AvApZ66Yi9r8hRD85U%3D" width="400"/>
+      <div class="project-content">
+       <h3>
+        jQuery Fixed Header
+       </h3>
+       <p>
+        A jQuery Plugin for responsive websites to fix a header to the top of the window and pad down the content to the height of the bar.
+       </p>
+       <a href="#">
+        View On GitHub
+       </a>
+      </div>
+     </div>
+     <div class="project">
+      <img alt="Screenshot of jQuery Floating Form Label project" height="150" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-wmhB2TtgChouFVFokGO0xL8l.png?st=2024-09-14T07%3A06%3A35Z&amp;se=2024-09-14T09%3A06%3A35Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-13T23%3A17%3A05Z&amp;ske=2024-09-14T23%3A17%3A05Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=vZxFXJNeb/YjwPAIVTuaTqG5DFUOuuUMvwn2kNLSzeQ%3D" width="400"/>
+      <div class="project-content">
+       <h3>
+        jQuery Floating Form Label
+       </h3>
+       <p>
+        A jQuery Plugin to turn an input placeholder into a floated form label when selected or filled out.
+       </p>
+       <a href="#">
+        View On GitHub
+       </a>
+      </div>
+     </div>
+    </div>
+    <div class="footer">
+     <a href="#">
+      See All Projects
+     </a>
+    </div>
+   </div>
+   <div class="twitter-feed">
+    <div class="tweet">
+     <img alt="Screenshot of a tweet" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-1ngsynQ8LLhZPA22TcouUAcC.png?st=2024-09-14T07%3A06%3A33Z&amp;se=2024-09-14T09%3A06%3A33Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-13T23%3A13%3A23Z&amp;ske=2024-09-14T23%3A13%3A23Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=5Dl4cC8LyjPPQyP1KHx3mFV5O1HdQzwICliLyQdYojw%3D" width="200"/>
+     <p>
+      What is this I'm seeing? Debugging an app in Safari with React DevTools and editor integration! Learn more: github.com/facebook/react...
+     </p>
+    </div>
+    <div class="tweet">
+     <img alt="Screenshot of a tweet" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-1ngsynQ8LLhZPA22TcouUAcC.png?st=2024-09-14T07%3A06%3A33Z&amp;se=2024-09-14T09%3A06%3A33Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-13T23%3A13%3A23Z&amp;ske=2024-09-14T23%3A13%3A23Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=5Dl4cC8LyjPPQyP1KHx3mFV5O1HdQzwICliLyQdYojw%3D" width="200"/>
+     <p>
+      Perfect weather to lay out at Jordan Lake! #adventure @ J Jordan instagram.com/p/BSwrcicBZRr...
+     </p>
+    </div>
+    <div class="tweet">
+     <img alt="Screenshot of a tweet" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-1ngsynQ8LLhZPA22TcouUAcC.png?st=2024-09-14T07%3A06%3A33Z&amp;se=2024-09-14T09%3A06%3A33Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-13T23%3A13%3A23Z&amp;ske=2024-09-14T23%3A13%3A23Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=5Dl4cC8LyjPPQyP1KHx3mFV5O1HdQzwICliLyQdYojw%3D" width="200"/>
+     <p>
+      Brand new Audio Technica AT-LP120. Such a beautiful sound... can't... learn more: techcrunch.com/2017/04/28...
+     </p>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

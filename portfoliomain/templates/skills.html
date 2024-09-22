@@ -1,0 +1,233 @@
+<html>
+  <head>
+    <title>What will you master?</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes bounce {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-30px);
+        }
+        60% {
+          transform: translateY(-15px);
+        }
+      }
+
+      @keyframes rotate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f5f5f5;
+        color: #333;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 2.5em;
+        margin-top: 50px;
+        animation: fadeIn 1s ease-in-out;
+      }
+      h1 span {
+        color: #ff4500;
+      }
+      p {
+        font-size: 1.2em;
+        color: #666;
+        animation: fadeIn 1.5s ease-in-out;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 30px;
+      }
+      .item {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        width: 150px;
+        margin: 15px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        animation: fadeIn 2s ease-in-out;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+      }
+      .item:nth-child(1) {
+        animation: bounce 2s ease-in-out;
+      }
+      .item:nth-child(2) {
+        animation: rotate 2s linear;
+      }
+      .item:nth-child(3) {
+        animation: fadeIn 2s ease-in-out;
+      }
+      .item:nth-child(4) {
+        animation: bounce 2s ease-in-out;
+      }
+      .item:nth-child(5) {
+        animation: rotate 2s linear;
+      }
+      .item:nth-child(6) {
+        animation: fadeIn 2s ease-in-out;
+      }
+      .item:nth-child(7) {
+        animation: bounce 2s ease-in-out;
+      }
+      .item:nth-child(8) {
+        animation: rotate 2s linear;
+      }
+      .item:nth-child(9) {
+        animation: fadeIn 2s ease-in-out;
+      }
+      .item img {
+        width: 50px;
+        height: 50px;
+      }
+      .item h3 {
+        font-size: 1em;
+        margin: 10px 0 5px;
+      }
+      .item p {
+        font-size: 0.9em;
+        color: #999;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    {% load static %}
+    <h1>
+      My 
+      <span> Skills </span>
+    </h1>
+    <p>Good at frontend, backend, database and AI-assisted coding.</p>
+    <div class="container">
+      <div class="item">
+        <img
+          alt="HTML logo"
+          height="50"
+          src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-Yom2QNYxsncWzy5vZIjd1YRG.png?st=2024-09-14T06%3A19%3A19Z&amp;se=2024-09-14T08%3A19%3A19Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-13T23%3A32%3A22Z&amp;ske=2024-09-14T23%3A32%3A22Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=qCrNayFSCGyJ5Cc2tGlwqdOrqKf5QPJLk%2Bt5xfFe60Y%3D"
+          width="50"
+        />
+        <h3>&gt; HTML</h3>
+        <p>Frontend Development</p>
+      </div>
+      <div class="item">
+        <img
+          alt="CSS logo"
+          height="50"
+          src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-SaqpAXb0jO3Sc1vrDEeEhO6a.png?st=2024-09-14T06%3A19%3A20Z&amp;se=2024-09-14T08%3A19%3A20Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-14T00%3A04%3A17Z&amp;ske=2024-09-15T00%3A04%3A17Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=0RQmKge2Pu/1NEtEkLa8Qyg3ArC2QIyh3peP38c9KMg%3D"
+          width="50"
+        />
+        <h3>&gt; CSS</h3>
+        <p>Frontend Development</p>
+      </div>
+      <div class="item">
+        <img
+          alt="Node JS logo"
+          height="50"
+          src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-RHaqEUlgOsw7vAM5RulIi5oa.png?st=2024-09-14T06%3A19%3A20Z&amp;se=2024-09-14T08%3A19%3A20Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-13T23%3A08%3A22Z&amp;ske=2024-09-14T23%3A08%3A22Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=/jNQ3yMsyP9yz/MIluO%2BqTf%2Bwy4IAPrUfTXOscVIwj4%3D"
+          width="50"
+        />
+        <h3>&gt; Node JS</h3>
+        <p>Backend Development</p>
+      </div>
+      <div class="item">
+        <img
+          alt="JS logo"
+          height="50"
+          src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-tomktkTQdwAMq7EvHI7VlWF5.png?st=2024-09-14T06%3A19%3A20Z&amp;se=2024-09-14T08%3A19%3A20Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-13T23%3A17%3A48Z&amp;ske=2024-09-14T23%3A17%3A48Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=30z4yyQtDDRavR0pRTo12IZ1hv0xMqHht6qOuKuvOfU%3D"
+          width="50"
+        />
+        <h3>&gt; JS</h3>
+        <p>Frontend Development</p>
+      </div>
+      <div class="item">
+        <img
+          alt="React logo"
+          height="50"
+          src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-zRWTc5SnfREwHu6L4Sabj9rq.png?st=2024-09-14T06%3A19%3A16Z&amp;se=2024-09-14T08%3A19%3A16Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-13T23%3A16%3A32Z&amp;ske=2024-09-14T23%3A16%3A32Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=bOHbz6%2BZ%2BnusJWk7xdnwZFXJHDZ3Mh8YomY9RLdyeLQ%3D"
+          width="50"
+        />
+        <h3>&gt; React</h3>
+        <p>Frontend Development</p>
+      </div>
+      <div class="item">
+        <img
+          alt="Github logo"
+          height="50"
+          src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-kJhXF4VP7NBUsq6nHAC80sba.png?st=2024-09-14T06%3A19%3A19Z&amp;se=2024-09-14T08%3A19%3A19Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-13T23%3A10%3A03Z&amp;ske=2024-09-14T23%3A10%3A03Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=JF3/nZKwuShmTqbAllRSjQHCxc6TDvrE7i8x3iyiSOE%3D"
+          width="50"
+        />
+        <h3>&gt; Github</h3>
+        <p>Deployment &amp; Collab</p>
+      </div>
+      <div class="item">
+        <img
+          alt="PostgreSQL logo"
+          height="50"
+          src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-OI0rCiYwouUXLAZNvZfgjNxQ.png?st=2024-09-14T06%3A19%3A16Z&amp;se=2024-09-14T08%3A19%3A16Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-13T23%3A15%3A05Z&amp;ske=2024-09-14T23%3A15%3A05Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=10SBHVFP12VEyp4eQtWEmzHxNfxA12yjG5tA4HKWB3o%3D"
+          width="50"
+        />
+        <h3>&gt; PostgreSQL</h3>
+        <p>Database</p>
+      </div>
+      <div class="item">
+        <img
+          alt="ChatGPT logo"
+          height="50"
+          src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-YjYa5iZeaT8WqBmOH79g5RkA.png?st=2024-09-14T06%3A19%3A18Z&amp;se=2024-09-14T08%3A19%3A18Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-13T23%3A14%3A32Z&amp;ske=2024-09-14T23%3A14%3A32Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=2ATAohDXXlgmRtO7U3RP428uuNdd6c3IZQ4R/NJsPsM%3D"
+          width="50"
+        />
+        <h3>&gt; ChatGPT</h3>
+        <p>AI Assistant</p>
+      </div>
+      <div class="item">
+        <img
+          alt="Vercel logo"
+          height="50"
+          src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-QeL9iltnp4i2zBIueQoY9poN.png?st=2024-09-14T06%3A19%3A18Z&amp;se=2024-09-14T08%3A19%3A18Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-13T23%3A20%3A12Z&amp;ske=2024-09-14T23%3A20%3A12Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=SEDM7z8kjmJUJ68n0ZW8E0Y/1pyJPST27vgcrIAog/o%3D"
+          width="50"
+        />
+        <h3>&gt; Vercel</h3>
+        <p>Deployment</p>
+      </div>
+      <div class="item">
+        <img alt="VS Code logo" height="80" src="{% static "vs code.jpeg" %}" />
+      </div>
+    </div>
+  </body>
+</html>
