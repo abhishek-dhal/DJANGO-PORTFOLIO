@@ -173,6 +173,16 @@
             font-size: 16px;
             line-height: 1.6;
         }
+        button{
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
     </style>
 </head>
 
@@ -225,9 +235,9 @@
         <p>
             A Creative Freelancer &amp; Full Stack Developer
         </p>
-        <button class="btn">
-            Know More
-        </button>
+        <a href=" {% url "knowMore" %}">
+            <button>Know More</button>
+        </a>
     </div>
     <div class="about">
         <img alt="" height="300"
@@ -238,18 +248,17 @@
                 Who Am I
             </h2>
             <p>
-                My name is Abhisek Dhall. I'm a Freelance Full Stack Developer based in New York, USA, and I'm very
-                passionate and dedicated to my work. With 5 years experience as a professional Full Stack Developer. I
+                My name is Abhisek Dhall. I'm a Freelance Full Stack Developer based in Cuttack, INDIA, and I'm very
+                passionate and dedicated to my work. With 2 years experience as a professional Full Stack Developer. I
                 have acquired the skills necessary to build great and premium websites.
             </p>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                From a young age, I’ve been fascinated by technology and its potential to shape our world. This curiosity led me to pursue a career in computer science, where I discovered my love for both front-end and back-end development. Over the years, I have honed my skills in various programming languages and frameworks, including HTML, CSS, JavaScript, React, Node.js, and more.
             </p>
             <div class="skills">
                 <div class="skill">
                     <span>
-                        Html5
+                        Html
                     </span>
                     <span class="stars">
                         ★★★★★
@@ -257,39 +266,7 @@
                 </div>
                 <div class="skill">
                     <span>
-                        jQuery
-                    </span>
-                    <span class="stars">
-                        ★★★★★
-                    </span>
-                </div>
-                <div class="skill">
-                    <span>
-                        Php
-                    </span>
-                    <span class="stars">
-                        ★★★★★
-                    </span>
-                </div>
-                <div class="skill">
-                    <span>
-                        Css3
-                    </span>
-                    <span class="stars">
-                        ★★★★★
-                    </span>
-                </div>
-                <div class="skill">
-                    <span>
-                        VueJs
-                    </span>
-                    <span class="stars">
-                        ★★★★★
-                    </span>
-                </div>
-                <div class="skill">
-                    <span>
-                        MySQL
+                        CSS
                     </span>
                     <span class="stars">
                         ★★★★★
@@ -305,7 +282,7 @@
                 </div>
                 <div class="skill">
                     <span>
-                        Sass
+                        React
                     </span>
                     <span class="stars">
                         ★★★★★
@@ -313,7 +290,39 @@
                 </div>
                 <div class="skill">
                     <span>
-                        Laravel
+                        React-Native
+                    </span>
+                    <span class="stars">
+                        ★★★★★
+                    </span>
+                </div>
+                <div class="skill">
+                    <span>
+                        MySQL
+                    </span>
+                    <span class="stars">
+                        ★★★★★
+                    </span>
+                </div>
+                <div class="skill">
+                    <span>
+                        Express
+                    </span>
+                    <span class="stars">
+                        ★★★★★
+                    </span>
+                </div>
+                <div class="skill">
+                    <span>
+                        NodeJs
+                    </span>
+                    <span class="stars">
+                        ★★★★★
+                    </span>
+                </div>
+                <div class="skill">
+                    <span>
+                        Mangoose
                     </span>
                     <span class="stars">
                         ★★★★★
@@ -337,8 +346,7 @@
                     Creative Design
                 </h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et.
+                    A website should be designed in a Creative way and looks attractive that is my first and topmost priority.
                 </p>
             </div>
             <div class="card">
@@ -348,8 +356,7 @@
                     Branding
                 </h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et.
+                    Branding of product should be given a higher amount of importance.
                 </p>
             </div>
             <div class="card">
@@ -359,8 +366,7 @@
                     User Interface
                 </h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et.
+                    The user's are our priority. that's why user Interface should be good.
                 </p>
             </div>
             <div class="card">
@@ -370,8 +376,7 @@
                     User Experience
                 </h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et.
+                    The user experience shouldn't be compromised at any cost.
                 </p>
             </div>
             <div class="card">
@@ -381,8 +386,7 @@
                     Clean Code
                 </h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et.
+                    A codeblock should be cleaned and readable for future development.
                 </p>
             </div>
             <div class="card">
@@ -392,8 +396,7 @@
                     Fast Support
                 </h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et.
+                    Always fast and first to reach at the time of requirement.
                 </p>
             </div>
         </div>

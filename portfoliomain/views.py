@@ -13,6 +13,9 @@ def skills(request):
 def projects(request):
     return render(request, 'projects.html')
 
+def knowMore(request):
+    return render(request, 'knowMore.html')
+
 from .models import Contact
 from django.http import HttpResponse
 def contact(request):
