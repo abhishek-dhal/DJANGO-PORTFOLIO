@@ -113,6 +113,40 @@
         .right .contact-info p {
             margin: 5px 0;
         }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                height: auto;
+            }
+            .left, .right {
+                flex: none;
+                width: 100%;
+                padding: 20px;
+                text-align: center;
+            }
+            .left .circles {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .left h1 {
+                font-size: 2em;
+            }
+            .right h2 {
+                font-size: 1.5em;
+            }
+            .right form input, .right form textarea {
+                font-size: 0.9em;
+                padding: 8px;
+            }
+            .right form button {
+                padding: 8px 16px;
+                font-size: 0.9em;
+            }
+        }
     </style>
 </head>
 <body>
@@ -132,24 +166,23 @@
         </div>
         <div class="right">
             <div class="nav">
-                <a href=" {% url "home" %}">Home</a>
-                <a href="{% url "about" %}">About</a>
-                <a href="{% url "skills" %}">Skills</a>
-                <a href="{% url "projects" %}">Projects</a>
+                <a href="{% url 'home' %}">Home</a>
+                <a href="{% url 'about' %}">About</a>
+                <a href="{% url 'skills' %}">Skills</a>
+                <a href="{% url 'projects' %}">Projects</a>
                 <a href="#">Resume</a>
-                
             </div>
             <h2>Contact us</h2>
             <form method="post">
                 {% csrf_token %}
-                <label for="first-name"> NAME</label>
-                <input type="text" id="first-name" name='name' placeholder="Enter your name">
+                <label for="first-name">NAME</label>
+                <input type="text" id="first-name" name="name" placeholder="Enter your name">
                 <label for="email">EMAIL</label>
-                <input type="email" id="email" name='email' placeholder="Enter your email">
+                <input type="email" id="email" name="email" placeholder="Enter your email">
                 <label for="phone">PHONE NUMBER</label>
-                <input type="tel" id="phone" name='phone' placeholder="Enter your phone number">
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
                 <label for="message">MESSAGE</label>
-                <textarea id="message" name='message' rows="4" placeholder="Enter your message"></textarea>
+                <textarea id="message" name="message" rows="4" placeholder="Enter your message"></textarea>
                 <button type="submit">Submit <i class="fas fa-arrow-right"></i></button>
             </form>
             <div class="contact-info">

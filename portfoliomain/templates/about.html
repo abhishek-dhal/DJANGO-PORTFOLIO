@@ -1,12 +1,10 @@
 <html>
- <head>
-  <title>
-   Marta Daniels
-  </title>
+<head>
+  <title>Abhisek Dhall</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;family=Roboto:wght@300&amp;display=swap" rel="stylesheet"/>
   <style>
-   body {
+        body {
             margin: 0;
             font-family: 'Roboto', sans-serif;
             background-color: #f5f5f5;
@@ -26,6 +24,7 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
+            flex-wrap: wrap;
         }
         .left {
             max-width: 50%;
@@ -41,7 +40,8 @@
             margin-top: 20px;
         }
         .right img {
-            width: 300px;
+            width: 100%;
+            max-width: 300px;
             height: auto;
             border-radius: 10px;
         }
@@ -69,54 +69,80 @@
             margin-right: 20px;
             font-size: 1em;
         }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+            }
+            .left {
+                max-width: 100%;
+                text-align: center;
+            }
+            .left h1 {
+                font-size: 2.5em;
+            }
+            .left p {
+                font-size: 0.9em;
+            }
+            .nav {
+                justify-content: center;
+            }
+            .right {
+                margin-top: 20px;
+            }
+            .right img {
+                width: 100%;
+                max-width: 100%;
+            }
+            .footer {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .left h1 {
+                font-size: 2em;
+            }
+            .left p {
+                font-size: 0.8em;
+            }
+            .nav a {
+                font-size: 0.9em;
+            }
+            .footer a {
+                font-size: 0.9em;
+            }
+        }
   </style>
- </head>
- <body>
-    {% load static%}
-  <div class="container">
-   <div class="left">
-    <div class="nav">
-    <a href=" {% url "home" %}">
-     Home
-    </a>
-     <a href=" {% url "about" %}">
-      About
-     </a>
-     <a href="{% url "skills" %}">
-        Skills
-    </a>
-    <a href=" {% url "projects" %}">
-        Projects
-    </a>
-     <a href=" {% url "contact" %}">
-      Contact
-     </a>
+</head>
+<body>
+    {% load static %}
+    <div class="container">
+        <div class="left">
+            <div class="nav">
+                <a href="{% url 'home' %}">Home</a>
+                <a href="{% url 'about' %}">About</a>
+                <a href="{% url 'skills' %}">Skills</a>
+                <a href="{% url 'projects' %}">Projects</a>
+                <a href="{% url 'contact' %}">Contact</a>
+            </div>
+            <h1>Abhisek<br/>Dhall</h1>
+            <p>
+                Hello, I'm Abhisek.<br/>
+                I'm a fashion and beauty photographer based in NYC. I hold a Master's Degree in Digital Photography from the School of Visual Arts (SVA) in New York.<br/><br/>
+                My commercial clients include: Becca, Carolina Herrera, Clinique, ColourPop, Essie, Garnier, GlamGlow, Gucci, Guess, IL MAKIAGE, L'Oreal, Make Up For Ever, Maybelline, Olay.
+            </p>
+            <div class="footer">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+            </div>
+        </div>
+        <div class="right">
+            <img alt="A woman sitting on a couch, partially covering her face with a sweater, smiling at the camera." src="{% static 'spider.jpg' %}" />
+        </div>
     </div>
-    <h1>
-     Abhisek
-     <br/>
-     Dhall
-    </h1>
-    <p>
-     Hello, I'm Abhisek.
-     <br/>
-     I'm a fashion and beauty photographer based in NYC. I'm holds a Master's Degree in Digital Photography from the School of Visual Arts (SVA) in New York.
-     <br/>
-     <br/>
-     My commercial clients include: Becca, Carolina Herrera, Clinique, ColourPop, Essie, Garnier, GlamGlow, Gucci, Guess, IL MAKIAGE, L'Oreal, Make Up For Ever, Maybelline, Olay.
-    </p>
-    <div class="footer">
-     <a href="#">
-      Instagram
-     </a>
-     <a href="#">
-      Facebook
-     </a>
-    </div>
-   </div>
-   <div class="right">
-    <img alt="A woman sitting on a couch, partially covering her face with a sweater, smiling at the camera." height="400" src=" {% static "spider.jpg" %}" width="300"/>
-   </div>
-  </div>
- </body>
+</body>
 </html>
